@@ -20,7 +20,7 @@ public class RollController {
     } else {
       logger.info("Anonymous player is rolling the dice: {}", result);
     }
-    return Integer.toString(result);
+    return player.get() + " rolled the dice : " + Integer.toString(result);
   }
 
   public int getRandomNumber(int min, int max) {
